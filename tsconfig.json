@@ -1,0 +1,18 @@
+{
+	"compilerOptions": {
+		"outDir": "dist",
+		"sourceMap": true,
+		"noImplicitAny": true,
+		"module": "commonjs",
+		"target": "es2015",
+		"jsx": "react",
+		"resolveJsonModule": true,
+	},
+	// "include": [
+	//     "./src/**/*", "app.js"
+	// ],
+	"exclude": [
+		"bin",
+		"node_modules"
+	]
+}
