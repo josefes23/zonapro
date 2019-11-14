@@ -4,7 +4,8 @@
   "description": "test",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build:dev": "webpack --progress --colors --config webpack.dev.js",
+    "build:prod": "webpack --config webpack.prod.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/josefes23/zonapro/issues"
   },
-  "homepage": "https://github.com/josefes23/zonapro#readme"
+  "homepage": "https://github.com/josefes23/zonapro#readme",
+  "devDependencies": {
+    "typescript": "^3.7.2",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  }
 }
