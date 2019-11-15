@@ -2,11 +2,11 @@ var path = require('path');
 
 module.exports = {
 	entry: {
-		'homeForSales': "./src/HomesForSale/index.tsx"
+		'homeForSales': "./src/Components/HomesForSale/index.tsx"
 	},
 	output: {
 		filename: '[name].js',
-		path: __dirname + "../../scripts/dist"
+		path: __dirname + "/public/dist"
 	},
 	resolve: {
 		// Add '.ts' and '.tsx' as resolvable extensions.
@@ -34,9 +34,9 @@ module.exports = {
 	},
 	plugins: [],
 	externals: {
-		"react": "React",
-		"react-dom": "ReactDOM",
-		"rxjs": "rxjs"
+		// "react": "React",
+		// "react-dom": "ReactDOM",
+		// "rxjs": "rxjs"
 	},
 	optimization: {
 		splitChunks: {
