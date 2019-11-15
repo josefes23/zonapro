@@ -18,8 +18,11 @@
   },
   "homepage": "https://github.com/josefes23/zonapro#readme",
   "devDependencies": {
+    "ejs": "^2.7.2",
+    "express": "^4.17.1",
     "typescript": "^3.7.2",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.10"
-  }
+  },
+  "dependencies": {}
 }
