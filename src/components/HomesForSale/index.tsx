@@ -1,7 +1,8 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
+import { HomeForSaleContainer } from "./homeForSaleContainer";
 
 ReactDOM.render(
-    <div>REact</div>,
+    <HomeForSaleContainer />,
     document.getElementById("index")
 )
