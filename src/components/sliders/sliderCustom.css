@@ -1,3 +1,4 @@
+/* buttons styles*/
 .buttonCustom {
 	background: #a1a1a1;
 	border: 0;
@@ -17,4 +18,19 @@
 
 .buttonNext {
 	right: 0;
+}
+
+.dotCustom {
+	text-align: center;
+}
+
+.dotCustom button {
+	border: 0;
+	border-radius: 50%;
+	height: 12px;
+	margin-left: 5px;
+	background: #b4b4b4;
+}
+.dotCustom button:disabled{
+	background:#525252;
 }
