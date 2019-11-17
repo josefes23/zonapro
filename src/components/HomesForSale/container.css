@@ -1,0 +1,10 @@
+.homeForSaleContainer{
+    max-width: 875px;
+    margin: auto;
+}
+
+.sliderContainer{
+    padding-top :15px;
+    max-height: 200px;
+    display: table;
+}
