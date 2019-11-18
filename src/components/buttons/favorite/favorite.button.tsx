@@ -9,20 +9,18 @@ interface props {
 }
 
 export default class FavoriteButton extends React.Component<props> {
-	selected: boolean;
 
 	constructor(props: props) {
 		super(props);
-		this.selected = props.selected == undefined ? false : props.selected;
 	}
 
 	render() {
 		return (
 			<button
 				className={`${style.favoriteButtonBase} ${this.props.buttonCssClass || ""}`}
-				onClick={() => this.props.onclick(this.selected)}>
+				onClick={() => this.props.onclick(this.props.selected)}>
 				<span className={`glyphicon glyphicon-heart 
-				${this.selected == true ? this.props.selectedHeartCssClass || style.heartSelected : ""}`}></span>
+				${this.props.selected == true ? this.props.selectedHeartCssClass || style.heartSelected : ""}`}></span>
 			</button >
 		)
 	}
