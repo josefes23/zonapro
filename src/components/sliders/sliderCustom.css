@@ -1,4 +1,5 @@
 /* buttons styles*/
+
 .buttonCustom {
 	background: #a1a1a1;
 	border: 0;
@@ -31,6 +32,17 @@
 	margin-left: 5px;
 	background: #b4b4b4;
 }
-.dotCustom button:disabled{
-	background:#525252;
+
+.dotCustom button:disabled {
+	background: #525252;
+}
+
+/*favorite button*/
+
+.favoriteButtonCustom {
+	position: absolute;
+	z-index: 1;
+	left: 100%;
+	margin-left: -50px;
+	top: 5px;
 }
