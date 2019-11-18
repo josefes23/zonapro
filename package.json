@@ -27,7 +27,7 @@
     "redux-observable": "^1.2.0",
     "style-loader": "^1.0.0",
     "ts-loader": "^6.2.1",
-    "typesafe-actions": "^5.1.0",
+    "typesafe-actions": "^4.4.2",
     "typescript": "^3.7.2",
     "typings-for-css-modules-loader": "^1.7.0",
     "webpack": "^4.41.2",
