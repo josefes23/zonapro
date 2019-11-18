@@ -1,6 +1,6 @@
 import * as React from "react";
 import * as style from "./container.css";
-import CarouselContainer from "../sliders";
+import CarouselContainer from "../sliders/carousel.connect"
 
 export class HomeForSaleContainer extends React.Component<any, any>{
 
@@ -12,7 +12,8 @@ export class HomeForSaleContainer extends React.Component<any, any>{
 		return (
 			<div className={`row ${style.homeForSaleContainer}`}>
 				<section className={`${style.sliderContainer} col-xs-12 col-sm-5`}>
-					<CarouselContainer ></CarouselContainer>
+					<CarouselContainer>
+					</CarouselContainer>
 				</section>
 				<section className="homeDescriptionContainer col-xs-12 col-sm-7">
 					<div className="homeTitle">
