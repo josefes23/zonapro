@@ -1,5 +1,5 @@
 var path = require('path');
-
+var webpack = require('webpack');
 module.exports = {
 	entry: {
 		'homeForSales': "./src/Components/HomesForSale/index.tsx"
@@ -32,7 +32,10 @@ module.exports = {
 			}
 		]
 	},
-	plugins: [],
+	plugins: [
+		new webpack.WatchIgnorePlugin([
+			/css\.d\.ts$/
+		])],
 	externals: {
 		// "react": "React",
 		// "react-dom": "ReactDOM",
