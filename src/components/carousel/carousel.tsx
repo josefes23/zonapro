@@ -1,11 +1,17 @@
 import * as React from 'react';
-import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext, ImageWithZoom, ButtonFirst, ButtonLast, DotGroup, Image } from 'pure-react-carousel';
+import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext, DotGroup, Image } from 'pure-react-carousel';
 import * as style from "./sliderCustom.css";
 import FavoriteButton from '../buttons/favorite/favorite.button';
+import EditPriceButton from '../buttons/editable/editPrice.button';
 
 export interface CarouselProps {
 	selectFavorite?: boolean,
-	handleClickFavorite?: any
+	showEditButton?: boolean,
+	handleOnClickCancel?: any,
+	handleClickFavorite?: any,
+	handleOnChangePrice?: any,
+	handleOnClickEdit?: any,
+	price: number
 }
 
 export default class extends React.Component<CarouselProps> {
@@ -22,7 +28,7 @@ export default class extends React.Component<CarouselProps> {
 				totalSlides={3}
 				step={1}
 				naturalSlideWidth={200}
-				naturalSlideHeight={150}
+				naturalSlideHeight={160}
 				hasMasterSpinner
 			>
 				<FavoriteButton
@@ -48,6 +54,13 @@ export default class extends React.Component<CarouselProps> {
 					<span className="glyphicon glyphicon-chevron-right"></span>
 				</ButtonNext>
 				<DotGroup className={style.dotCustom} />
+				<EditPriceButton
+					value={this.props.price}
+					handleOnchange={this.props.handleOnChangePrice}
+					handleOnClickEdit={this.props.handleOnClickEdit}
+					handleOnClickCancel={this.props.handleOnClickCancel}
+					showEditButton={this.props.showEditButton}
+					customCssClass={style.editButtonCustom} />
 			</CarouselProvider>
 		)
 	}
