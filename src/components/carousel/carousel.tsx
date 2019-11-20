@@ -3,7 +3,7 @@ import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext, DotGroup, Imag
 import * as style from "./sliderCustom.css";
 import FavoriteButton from '../buttons/favorite/favorite.button';
 import EditPriceButton from '../buttons/editable/editPrice.button';
-import { FormatNumber } from '../../services/someServices';
+import { FormatNumber } from '../../services/numberServices';
 import { HomeDetails } from '../lists/homeDetails';
 
 export interface CarouselProps {
