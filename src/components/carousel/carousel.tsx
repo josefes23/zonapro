@@ -26,7 +26,7 @@ export default class extends React.Component<CarouselProps> {
 			<CarouselProvider
 				infinite={true}
 				visibleSlides={1}
-				totalSlides={3}
+				totalSlides={7}
 				step={1}
 				naturalSlideWidth={200}
 				naturalSlideHeight={160}
@@ -39,20 +39,32 @@ export default class extends React.Component<CarouselProps> {
 				/>
 				<Slider >
 					<Slide index={0}>
-						<Image hasMasterSpinner={true} src="./media/353012_1.jpg" />
+						<Image hasMasterSpinner={true} src="./media/1.jpg" />
 					</Slide>
 					<Slide index={1}>
-						<Image hasMasterSpinner={true} src="./media/957087_1.jpg" />
+						<Image hasMasterSpinner={true} src="./media/2.jpg" />
 					</Slide>
 					<Slide index={2}>
-						<Image hasMasterSpinner={true} src="./media/100193394_0.jpg" />
+						<Image hasMasterSpinner={true} src="./media/3.jpg" />
+					</Slide>
+					<Slide index={3}>
+						<Image hasMasterSpinner={true} src="./media/4.jpg" />
+					</Slide>
+					<Slide index={4}>
+						<Image hasMasterSpinner={true} src="./media/5.jpg" />
+					</Slide>
+					<Slide index={5}>
+						<Image hasMasterSpinner={true} src="./media/6.jpg" />
+					</Slide>
+					<Slide index={6}>
+						<Image hasMasterSpinner={true} src="./media/7.jpg" />
 					</Slide>
 				</Slider>
 				<ButtonBack className={`${style.buttonCustom} ${style.buttonBack}`}>
-					<span className="glyphicon glyphicon-chevron-left"></span>
+					<span className="glyphicon glyphicon-menu-left"></span>
 				</ButtonBack>
 				<ButtonNext className={`${style.buttonCustom} ${style.buttonNext}`}>
-					<span className="glyphicon glyphicon-chevron-right"></span>
+					<span className="glyphicon glyphicon-menu-right"></span>
 				</ButtonNext>
 				<DotGroup className={style.dotCustom} />
 				<EditPriceButton
