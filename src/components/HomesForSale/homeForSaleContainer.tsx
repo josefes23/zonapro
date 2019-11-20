@@ -2,16 +2,29 @@ import * as React from "react";
 import * as style from "./container.css";
 import CarouselContainer from "../carousel/carousel.connect"
 import EditPriceButton from "../buttons/editable/editPrice.button";
-import { FormatNumber } from "../../services/someServices";
+import { FormatNumber } from "../../services/numberServices";
 import HomeBox from "../boxMessage/homeBox";
 import { HomeDetails } from "../lists/homeDetails";
 import EmailModal from "../modals/sendEmail/emailModal";
+import DataServices, { IDataServices } from "../../services/dataServices";
 
+interface homeForSaleProps {
+	loadData?: any,
+	handleOnClickEdit?: any,
+	price?: number
+}
 
-export class HomeForSaleContainer extends React.Component<any, any>{
+export class HomeForSaleContainer extends React.Component<homeForSaleProps, any>{
 	state = { showModal: false };
-	constructor(props: any) {
+	private dataServices: IDataServices = DataServices.getInstance();
+	constructor(props: homeForSaleProps) {
 		super(props);
+	}
+
+	componentDidMount() {
+		this.props.loadData(
+			this.dataServices.getPriceHome(), this.dataServices.getFavoriteHome()
+		);
 	}
 
 	handleClick = () => {
