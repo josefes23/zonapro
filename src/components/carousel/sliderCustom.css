@@ -40,9 +40,27 @@
 /*favorite button*/
 
 .favoriteButtonCustom {
-	position: absolute;
-	z-index: 1;
 	left: 100%;
 	margin-left: -50px;
+	position: absolute;
 	top: 5px;
+	z-index: 1;
+}
+
+/*edit button*/
+
+.editButtonCustom {
+	margin-top: -105px;
+	position: absolute;
+	top: 100%;
+	width: 100%;
+}
+
+.editButtonCustom input {
+	padding: 0 10px;
+}
+
+.editButtonCustom{
+	color: #fff;
+	padding: 0 10px;
 }
