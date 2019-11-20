@@ -37,9 +37,8 @@ module.exports = {
 			/css\.d\.ts$/
 		])],
 	externals: {
-		// "react": "React",
-		// "react-dom": "ReactDOM",
-		// "rxjs": "rxjs"
+		"react": "React",
+		"react-dom": "ReactDOM"
 	},
 	optimization: {
 		splitChunks: {
