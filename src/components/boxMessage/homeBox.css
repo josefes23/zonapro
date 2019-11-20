@@ -1,0 +1,12 @@
+.boxContainer h6 {
+	color: grey;
+}
+
+.boxContainer h6 span {
+	padding-right: 5px;
+}
+
+.boxContainer p {
+	font-family: Roboto-Light;
+	font-size: 15px;
+}
