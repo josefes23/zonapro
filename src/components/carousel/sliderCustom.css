@@ -40,11 +40,11 @@
 /*favorite button*/
 
 .favoriteButtonCustom {
-    left: 100%;
-    margin-left: -50px;
-    position: absolute;
-    top: 5px;
-    z-index: 1;
+	left: 100%;
+	margin-left: -50px;
+	position: absolute;
+	top: 5px;
+	z-index: 1;
 }
 
 /*edit button*/
@@ -54,23 +54,22 @@
 	position: absolute;
 	top: 100%;
 	width: 100%;
+	color: #fff;
 }
 
 .editButtonCustom input {
 	padding: 0 10px;
-	color: #fff;
 }
 
 .editButtonCustom {
-	color: #fff;
 	padding: 0 10px;
 }
 
 /*list items*/
 
 .itemsCustom {
-    position: absolute;
-    margin-top: -50px!important;
-    padding-left: 15px!important;
-    color: #fff;
+	position: absolute;
+	margin-top: -50px!important;
+	padding-left: 15px!important;
+	color: #fff!important;
 }
