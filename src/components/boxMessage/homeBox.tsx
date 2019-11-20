@@ -1,5 +1,5 @@
 import * as React from 'react';
-import * as style from './homeBox.css';
+import * as style from './home.css';
 
 export default class HomeBox extends React.Component {
 	

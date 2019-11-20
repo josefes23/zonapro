@@ -1,11 +1,11 @@
 import * as React from 'react';
-import * as style from './homeItems.css';
+import * as style from './homeDetails.css';
 
 interface props {
 	cssClassCustom?: string
 }
 
-export default class HomeItems extends React.Component<props> {
+export class HomeDetails extends React.Component<props> {
 	constructor(props: any) {
 		super(props)
 	}

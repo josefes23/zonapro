@@ -4,6 +4,7 @@ import * as style from "./sliderCustom.css";
 import FavoriteButton from '../buttons/favorite/favorite.button';
 import EditPriceButton from '../buttons/editable/editPrice.button';
 import { FormatNumber } from '../../services/someServices';
+import { HomeDetails } from '../lists/homeDetails';
 
 export interface CarouselProps {
 	selectFavorite?: boolean,
@@ -70,8 +71,9 @@ export default class extends React.Component<CarouselProps> {
 				<EditPriceButton
 					value={this.props.price}
 					handleOnClickEdit={this.props.handleOnClickEdit}
-					customCssClass={style.editButtonCustom}
+					customCssClass={`${style.editButtonCustom} visible-xs`}
 					formatNumber={(value: number) => FormatNumber(value, 2, "$")} />
+				<HomeDetails cssClassCustom={`${style.itemsCustom} visible-xs`} />
 			</CarouselProvider>
 		)
 	}
