@@ -3,6 +3,7 @@ import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext, DotGroup, Imag
 import * as style from "./sliderCustom.css";
 import FavoriteButton from '../buttons/favorite/favorite.button';
 import EditPriceButton from '../buttons/editable/editPrice.button';
+import { FormatNumber } from '../../services/someServices';
 
 export interface CarouselProps {
 	selectFavorite?: boolean,
@@ -56,11 +57,9 @@ export default class extends React.Component<CarouselProps> {
 				<DotGroup className={style.dotCustom} />
 				<EditPriceButton
 					value={this.props.price}
-					handleOnchange={this.props.handleOnChangePrice}
 					handleOnClickEdit={this.props.handleOnClickEdit}
-					handleOnClickCancel={this.props.handleOnClickCancel}
-					showEditButton={this.props.showEditButton}
-					customCssClass={style.editButtonCustom} />
+					customCssClass={style.editButtonCustom}
+					formatNumber={(value: number) => FormatNumber(value, 2, "$")} />
 			</CarouselProvider>
 		)
 	}

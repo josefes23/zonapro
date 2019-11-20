@@ -1,6 +1,10 @@
 import * as React from "react";
 import * as style from "./container.css";
-import CarouselContainer from "../sliders/carousel.connect"
+import CarouselContainer from "../carousel/carousel.connect"
+import EditPriceButton from "../buttons/editable/editPrice.button";
+import { FormatNumber } from "../../services/someServices";
+
+
 
 export class HomeForSaleContainer extends React.Component<any, any>{
 
@@ -21,10 +25,15 @@ export class HomeForSaleContainer extends React.Component<any, any>{
 						<p>3421 Sandon Place, Winston Salem, NC 27104</p>
 					</div>
 					<div className="homeDescription">
-						Gorgeous brick ranch w/ open tiled & TREX decked porch over looking pool/spa & beautiful landscaped backyard. Covered porch with pizza oven and bar. Hardwood flrs, gourmet kitchen, massive master bath w/ heated flrs. Full water proof finished basement/kitchenette, full bath plus bonus room, laundry, & movie room. Potential for separate living quarters. Leaf guard system is transferable.
+						<p>
+							Gorgeous brick ranch w/ open tiled & TREX decked porch over looking pool/spa & beautiful landscaped backyard. Covered porch with pizza oven and bar. Hardwood flrs, gourmet kitchen, massive master bath w/ heated flrs. Full water proof finished basement/kitchenette, full bath plus bonus room, laundry, & movie room. Potential for separate living quarters. Leaf guard system is transferable.
+						</p>
 					</div>
 					<div className="homeEditPrice">
-						<h1>$ 1.232.330<span>$/m2 3.680</span></h1>
+						<EditPriceButton
+							value={this.props.price}
+							handleOnClickEdit={this.props.handleOnClickEdit}
+							formatNumber={(value: number) => FormatNumber(value, 2, "$")} />
 					</div>
 					<div className="row homeOtherDetail">
 						<div className="col-xs-8">
