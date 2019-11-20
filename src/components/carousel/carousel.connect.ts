@@ -4,6 +4,7 @@ import * as actions from "../../actions/index.action";
 import { ActionType, action } from "typesafe-actions";
 import { bindActionCreators } from "redux";
 import CarouselContainer from "./carousel";
+import DataServices from "../../services/dataServices";
 
 type Action = ActionType<typeof actions>;
 
@@ -15,8 +16,14 @@ const mapStateToProps = (state: RootState) => ({
 });
 
 const mapDispatchToProps = (dispatch: any, props: OwnProps) => bindActionCreators({
-    handleClickFavorite: (data: boolean) => actions.homeSelected(!data),
-    handleOnClickEdit: (data: number) => actions.homePriceChange(data),
+	handleClickFavorite: (data: boolean) =>{
+		DataServices.getInstance().saveFavoriteHome(!data);
+		return actions.homeSelected(!data)
+	},
+	handleOnClickEdit: (data: number) => {
+		DataServices.getInstance().savePriceHome(data);
+		return actions.homePriceChange(data)
+	},
 }, dispatch);
 
 export default connect(mapStateToProps, mapDispatchToProps)(CarouselContainer);
