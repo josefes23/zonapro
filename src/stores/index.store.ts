@@ -21,10 +21,10 @@ const composeEnhancers = (
 
 const epicMiddleware = createEpicMiddleware<Action, Action, RootState>();
 
+const initState = { homeforsale: { selectFavorite: false, price: 0 } }
 
 
-
-function configureStore(initialState: RootState = { homeforsale: { selectFavorite: false } }) {
+function configureStore(initialState: RootState = initState) {
 	// configure middlewares
 	const middlewares = [
 		epicMiddleware,
