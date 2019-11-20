@@ -18,20 +18,20 @@ export default class DataServices implements IDataServices {
 	}
 
 	savePriceHome(price: number): void {
-		window.localStorage.setItem("price", price.toString());
+		window.sessionStorage.setItem("price", price.toString());
 	}
 
 	saveFavoriteHome(selected: boolean): void {
-		window.localStorage.setItem("favorite", selected.toString());
+		window.sessionStorage.setItem("favorite", selected.toString());
 	}
 
 	getPriceHome(): number {
-		let price = window.localStorage.getItem("price");
+		let price = window.sessionStorage.getItem("price");
 		return parseFloat(price);
 	}
 
 	getFavoriteHome(): boolean {
-		let fav = window.localStorage.getItem("favorite") || "";
+		let fav = window.sessionStorage.getItem("favorite") || "";
 		return fav.toLowerCase() == 'true' ? true : false;
 	}
 }
