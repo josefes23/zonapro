@@ -10,11 +10,12 @@ type Action = ActionType<typeof actions>;
 interface OwnProps { }
 
 const mapStateToProps = (state: RootState) => ({
-    selectFavorite: state.homeforsale.selectFavorite
+	price: state.homeforsale.price,
 });
 
-// const mapDispatchToProps = (dispatch: any, props: OwnProps) => bindActionCreators({
-//     handleClickFavorite: (data: boolean) => actions.homeSelected(!data),
-// }, dispatch);
+const mapDispatchToProps = (dispatch: any, props: OwnProps) => bindActionCreators({
+    handleClickFavorite: (data: boolean) => actions.homeSelected(!data),
+    handleOnClickEdit: (data: number) => actions.homePriceChange(data),
+}, dispatch);
 
-export default connect(mapStateToProps, null)(HomeForSaleContainer);
+export default connect(mapStateToProps, mapDispatchToProps)(HomeForSaleContainer);
