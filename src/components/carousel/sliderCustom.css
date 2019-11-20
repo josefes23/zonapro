@@ -40,17 +40,17 @@
 /*favorite button*/
 
 .favoriteButtonCustom {
-	left: 100%;
-    margin-left: -65px;
+    left: 100%;
+    margin-left: -50px;
     position: absolute;
-    top: 20px;
+    top: 5px;
     z-index: 1;
 }
 
 /*edit button*/
 
 .editButtonCustom {
-	margin-top: -105px;
+	margin-top: -120px;
 	position: absolute;
 	top: 100%;
 	width: 100%;
@@ -61,7 +61,16 @@
 	color: #fff;
 }
 
-.editButtonCustom{
+.editButtonCustom {
 	color: #fff;
 	padding: 0 10px;
+}
+
+/*list items*/
+
+.itemsCustom {
+    position: absolute;
+    margin-top: -50px!important;
+    padding-left: 15px!important;
+    color: #fff;
 }
