@@ -1,0 +1,12 @@
+.favoriteButtonBase {
+    border: 0;
+    background: transparent;
+}
+
+.favoriteButtonBase span {
+    font-size: 3.5rem;
+}
+
+.favoriteButtonBase span.heartSelected {
+    color: #f34d4d;
+}

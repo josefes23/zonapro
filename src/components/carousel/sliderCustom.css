@@ -1,0 +1,75 @@
+/* buttons styles*/
+
+.buttonCustom {
+	background: #505050;
+	border: 0;
+	border-radius: 50%;
+	color: #fff;
+	font-size: 3rem;
+	height: 40px;
+	opacity: .6;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.buttonBack {
+	left: 0;
+}
+
+.buttonNext {
+	right: 0;
+}
+
+.dotCustom {
+	text-align: center;
+}
+
+.dotCustom button {
+	border: 0;
+	border-radius: 50%;
+	height: 12px;
+	margin-left: 5px;
+	background: #b4b4b4;
+}
+
+.dotCustom button:disabled {
+	background: #525252;
+}
+
+/*favorite button*/
+
+.favoriteButtonCustom {
+	left: 100%;
+	margin-left: -50px;
+	position: absolute;
+	top: 5px;
+	z-index: 1;
+}
+
+/*edit button*/
+
+.editButtonCustom {
+	margin-top: -120px;
+	position: absolute;
+	top: 100%;
+	width: 100%;
+	color: #fff;
+}
+
+.editButtonCustom input {
+	padding: 0 10px;
+}
+
+.editButtonCustom {
+	padding: 0 10px;
+}
+
+/*list items*/
+
+.itemsCustom {
+	position: absolute;
+	margin-top: -50px!important;
+	padding-left: 15px!important;
+	color: #fff!important;
+}
