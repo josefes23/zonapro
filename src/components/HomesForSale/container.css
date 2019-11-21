@@ -39,3 +39,19 @@
 .detailContainer>div {
 	padding: 0 15px;
 }
+
+.editPriceContainer>div {
+	float: left;
+}
+
+.m2Container {
+	top: 36px;
+	position: relative;
+	padding-left: 15px;
+	color: gray;
+	font-size: 15px;
+}
+
+.m2Container span {
+	font-size: 10px;
+}
