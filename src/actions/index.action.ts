@@ -8,4 +8,4 @@ import {
 
 export const homeSelected = createAction(HOMEFORSALE_SELECT, resolve => (select: boolean) => resolve(select))
 export const homePriceChange = createAction(HOME_PRICE_CHANGE, resolve => (price: number) => resolve(price))
-export const homeloadData = createAction(HOME_LOAD_DATA, resolve => (price: number, favorite: boolean) => resolve({ price, favorite }))
+export const homeloadData = createAction(HOME_LOAD_DATA, resolve => (price: number, favorite: boolean, m2: number) => resolve({ price, favorite, m2 }))
