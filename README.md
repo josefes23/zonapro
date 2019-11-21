@@ -2,6 +2,8 @@
 
 Proyecto realizado con webpack, express, typescript, react, react-redux
 
+[GitHub Pages](https://josefes23.github.io/)
+
 ## Descarga del código y despliegue de la app
 
 1- Instalar NodeJS en su ultima versión `https://nodejs.org/es/`
