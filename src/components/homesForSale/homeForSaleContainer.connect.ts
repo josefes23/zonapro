@@ -12,10 +12,11 @@ interface OwnProps { }
 
 const mapStateToProps = (state: RootState) => ({
 	price: state.homeforsale.price,
+	m2: state.homeforsale.m2,
 });
 
 const mapDispatchToProps = (dispatch: any, props: OwnProps) => bindActionCreators({
-	handleClickFavorite: (data: boolean) =>{
+	handleClickFavorite: (data: boolean) => {
 		DataServices.getInstance().saveFavoriteHome(!data);
 		return actions.homeSelected(!data)
 	},
@@ -23,7 +24,7 @@ const mapDispatchToProps = (dispatch: any, props: OwnProps) => bindActionCreator
 		DataServices.getInstance().savePriceHome(data);
 		return actions.homePriceChange(data)
 	},
-	loadData: (price: number, favorite: boolean) => actions.homeloadData(price, favorite),
+	loadData: (price: number, favorite: boolean, m2: number) => actions.homeloadData(price, favorite, m2),
 }, dispatch);
 
 export default connect(mapStateToProps, mapDispatchToProps)(HomeForSaleContainer);
