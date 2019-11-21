@@ -27,13 +27,15 @@ export default class EditPriceButton extends React.Component<props> {
 		});
 	}
 
-	onBlur = () => {
+	onBlur = (event:any) => {
+		event.stopPropagation();
 		setTimeout(() => {
 			this.setState({ focused: false, showEditButton: false })
-		}, 100);
+		}, 500);
 	}
 
-	onFocus = () => {
+	onFocus = (event:any) => {
+		event.stopPropagation();
 		this.setState({ focused: true })
 	}
 
