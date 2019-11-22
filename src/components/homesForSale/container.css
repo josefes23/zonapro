@@ -1,0 +1,57 @@
+.homeForSaleContainer {
+	border: 1px solid #f1eded;
+	display: table;
+	max-width: 875px;
+	margin: auto;
+	padding: 15px 0px;
+}
+
+.carouselContainer {
+	display: table;
+	max-height: 200px;
+	padding: 15px!important;
+}
+
+.carouselContainer>div {
+	position: relative;
+}
+
+.homeItemsContainer>div {
+	background: #f1f1f1;
+	display: table;
+	height: 100%;
+	padding: 7px 0px;
+	width: 100%;
+	margin-top: 5px;
+}
+
+.contactButton {
+	background: transparent;
+	border: 0;
+	color: #4da5b3;
+	float: right;
+	font-family: Roboto-Light;
+	font-size: 1.5rem;
+	padding: 5px;
+	text-transform: uppercase;
+}
+
+.detailContainer>div {
+	padding: 0 15px;
+}
+
+.editPriceContainer>div {
+	float: left;
+}
+
+.m2Container {
+	top: 36px;
+	position: relative;
+	padding-left: 15px;
+	color: gray;
+	font-size: 15px;
+}
+
+.m2Container span {
+	font-size: 10px;
+}
